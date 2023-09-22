@@ -1,0 +1,36 @@
+[Application]
+EnableConsolePort=true
+EnableDataPort=false
+EnableFilteredPort=true
+EnableTimingServer1=true
+EnableTimingServer2=true
+EnableWriteConsoleLog=true
+EnableWriteDataLog=false
+EnableWriteFilteredLog=true
+
+[Network]
+ConsolePort=9999
+DataPort=2233
+FilteredPort=3322
+MaxConnectedClients=10
+PingInterval=10
+TimingServer1Address=timing.datasport.com
+TimingServer2Address=timing2.datasport.com
+TimingServerBasePort=13200
+LogUploadServerAddress=www.datasport.ag/sys/d1_log.cfm
+LogUploadServerUseSSL=false
+
+[Reader]
+Antennas="1,31.5 2,31.5 3,31.5 4,31.5"
+Beep=filtered
+BeepDuration=100
+FilterDrift=-100
+FilterLength=3
+Frequency=Auto
+ReaderMode=AutoSet Dense Reader
+SearchMode=Single Target
+Session=1
+TagVolume=16-32
+TimePointDesc=L
+Password=Lp8oc4KcdpF
+GPI2_StopDelay=5000

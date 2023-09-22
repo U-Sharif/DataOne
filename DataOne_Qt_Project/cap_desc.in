@@ -1,0 +1,30 @@
+
+# CAP Description File
+# This file contains the settings used by the CAP generation tool
+# when a CAP partition upgrade file is produced.
+[Description]
+
+# Version is a 4 part number in decimal with each part limited to
+# 0-255. It is the version of the CAP to be generated.
+Version = 2.0.3.0
+
+# Valid Reader Hardware is a 3 part number in decimal representing
+# the reader model and major/minor revisions on which the CAP may be
+# loaded. Each field may be replaced by a '*' to mean 'all'.
+#
+# Format = aaa-bbb-ccc
+#   aaa - Model number
+#   bbb - Major revision
+#   ccc - Minor revision
+Valid Reader Hardware = *-*-*
+
+# File System Layout is an value used by the reader to determine how
+# the CAP partition should be loaded to flash. Currently the only
+# supported layout version is 10.
+File System Layout = 10
+
+# Input Directory is the top-level directory of the filesystem to
+# create. The files under this directory will be available on the
+# reader under /cust after the CAP is loaded.
+Input Directory = /home/revolution/Work/cap_input
+

@@ -1,0 +1,24 @@
+phase 3 extension of DataOne reader project
+
+- add setting option to set a timepointdesc, value will be alphanumeric max. 5 chars
+
+- add setting option to set a filter length in seconds, 0 is no filter - 1 to 999 is a valid filter length
+
+- add a new server port that offer a tcp port 3322 (like port 2233) for clients
+
+- port acts exactly like port 2233 (commands etc.), but decode the epc value and filters the records from the reader
+
+- decoding allgorithm is the same you can see in the SDK app source code - so epc will be decoded and will not be forwarded anymore, instead the of the epc the bib number value will be forwarded
+
+- filtering on port 3322 depents from the filter option value, ex. 3 means that bib value (decoded epc) record is valid, and then for the next 3 seconds all records with the same bib number will be discarded (important filter on the bib, not on the epc)
+
+- record format on port 3322 and new also timing server (same handling as for port 3322) is record index (from 1 and then i+1), bib number, date time, timepointdesc
+
+ex.
+83,9999,15.06.2011 15:28:10.887,R1
+84,3275,15.06.2011 15:28:12.385,R1
+85,9999,15.06.2011 15:28:14.132,R1
+86,9999,15.06.2011 15:28:18.141,R1
+
+- less urgent, but also part of this phase: show all messages from the console on tcp port 9999 to
+

@@ -1,0 +1,63 @@
+--------------------------------------------------------
+What you need to know, if you need to work with DataOne.
+--------------------------------------------------------
+
+1.  Advanced obect-oriented programming knowledge in C++
+2.  Overview of Qt framework (http://qt.nokia.com)
+3.  Cross-platform application development experience. (preffered)
+4.  Basic knowhow of RFID technology.
+5.  Intermediate knowledge of networks, protocols (Tcp, Ntp) and network programming.
+6.  Intermediate understanding of Linux OS.
+7.  Intermediate knowledge of VMWare Workstation software and Virtual Machines.
+
+
+-------------------------------------
+How to get started with development ?
+-------------------------------------
+
+1.  Please read "How to - Impinj Dev Environment with Qt Framework.pdf" in the project filder
+    for step-by-step guide to setting up the development environment.
+
+
+2. Skim through the following files in the project folder:
+
+        Embedded_Developers_Guide.pdf
+        LTK_Programmers_Guide.pdf
+        Octane_LLRP.pdf
+        RevolutionInstallGuide.pdf
+        RShell_Reference_Manual_4-8-0.pdf
+        SpeedwayR_installation_and_operations_guide_4-8-0.pdf
+
+
+3.  DataOne application architecture:
+
+        MainThread
+            |
+            |
+            |-DataOneSettings (Object)
+            |
+            |-SystemMonitor (Thread)
+            |
+            |-ConsoleFileWriter (Thread)
+            |
+            |-Reader (Object)
+            |
+            |-GPIOHandler (Thread)
+            |
+            |-TcpConsoleServer (Object) -----------> TcpConsoleClient (n Threads)
+            |
+            |-TcpDataServer (Object) --------------> TcpTelnetClient (n Threads)
+            |
+            |-TcpFilteredServer (Object) ----------> TcpTelnetClient (n Threads)
+            |                                   |
+            |-DataFileWriter (Thread)           ---> TcpServerConnection (2 Threads)
+            |
+            |-FilteredFileWriter Thread)
+
+
+4. Read the header files of each class in this project to understand the functionality.
+
+5. Go through the header files of OctaneSDK to understand the LLRP interface.
+
+6. Good to go.
+

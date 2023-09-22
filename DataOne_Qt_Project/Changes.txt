@@ -1,0 +1,304 @@
+[03 July, 2019]
+1. Fixed issue for auto sending records to timing servers on new readers.
+2. Code optimization in battery voltage calculation through GPIO.
+3. Version advanced to 2.0.3.
+
+[01 July, 2019]
+1. Bug removed in setFrequency() to handle an empty frequency preset.
+2. Include additional checks before setting a frequency preset.
+   If frequency preset = 0 MHz, then preset is changed to Auto.
+3. Version advanced to 2.0.2.
+
+[26 June, 2019]
+1. OS in new readers does not have ntpdate command, hence the manual ntp time sync command fails.
+   Added a check in reader.cpp to decide if reader is of new model based on frequency reported by reader feature set.
+   New variable is SystemSettings->isNewReader. True = New Reader , False = Old Reader.
+   Block running of UpdateDateTimeFromNTP() based on this check, and do not kill ntpd at D1 startup in reader.cpp and settings.cpp
+2. Version advanced to 2.0.1.
+
+[26 June, 2019]
+1. Added condition in setReaderMode() to check if frequency is above 900MHz. If yes, change Reader Mode "AutoSet Dense Reader" to "Hybrid Mode".
+   New readers procured in 2019 have frequencies above 900 MHz and do not support "AutoSet Dense Reader".
+2. Changed setFrequencies() to use predefined frequencies as reported by reader feature set query.
+   Do not use hardcoded frequencies.
+3. Improved several error messages in console.
+4. Versin advanced to 2.0.0.
+
+[22 July, 2018]
+1. Fixed bug in DNS resolver for timing server address. Error detection code added to prevent crashed when Internet disconnects after starting D1.
+2. Version advanced to 1.6.4.
+
+[18 July, 2018]
+1. Implemented setting the PingIPAddress and InternetCheckURL in DataOne.ini so the application need not be compiled again.
+2. Set default values to: PingIPAddress=8.8.8.8  InternetCheckURL=http://services.datasport.com
+3. As of July, 2018 DataSport servers have been secured to HTTPS and TLS 1.1 and 1.2. TLS 1.0 and below is disabled.
+   This caused the Internet connection check by http request fail.
+   For now, http://services.datasport.com has been kept unsecured for D1 application.
+4. Version advanced to 1.6.3.
+
+[29 June, 2018]
+1. Fixed issue in start script where the curl command to download gets stuck for a long time when Internet is not available.
+   Added a wget based check to assess connectivity to update server first by downloading only the header.
+   If response is OK, go for download attempt, otherwise skip the download, and start DataOne.
+2. Fixed crash issue in DNS query during timing server thread startup. Shifted to CheckPortStatus(), when Internet is available.
+3. Version advanced to 1.6.2.
+
+[25 June, 2018]
+1. Implemented dual Internet check methods. It works like this:
+    On startup, after 7 seconds, D1 will send a PING request to 8.8.8.8
+    If PING reply received -> Internet available -> start timing server connections.
+    If PING fails (timeout is 1 second) -> Send a GET web request to https://services.datasport.com/d1-test.htm
+    If web reply has content length  > 1 -> Web server is accessible ->  Internet available -> start timing server connections.
+    Recheck every 7 seconds -> If any of the timing servers are connected, do not send any PING or web request.
+    If both timing servers are disconnected during operation, start sending PING again (every 7 seconds), and if PING fails send web request. Do this until one of the two methods succeed.
+    When either method succeeds, try connecting again to timing servers.
+2. Added a log that in case of network error in connecting to timing server, it will post like this:
+    <<Network>> ERROR: Connection to timing.datasport.com (IP:212.60.37.167) failed. (Code 2)
+    Here, the IP shown will be DNS resolved IP. Code part is for debug purposes.
+3. Timing servers DNS info will be fetched before starting TCP Socket connection to servers.
+4. Add logs in timing server connections for process clarity.
+5. Added logs for Internet connection UP DOWN.
+6. Solved SSL/TLS handshake issue in web request for Internet check.
+7. DataOneNetworkSettings.InternetCheckURL changed from "http://services.datasport.com" to "https://services.datasport.com/d1-test.htm".
+
+[24 June, 2018]
+1. Changed web request based Internet connection check method to PING based method. Check by pinging google DNS server 8.8.8.8
+2. All code committed to SVN server.
+3. Version advanced to 1.6.1.
+
+[06 August, 2017]
+1. Fixed bug in tcpserverconnection.cpp. "get_log_files_dir" incorrectly sending "message 0" instead of "message 1".
+2. Added command "get_log_file" in tcp server connection. All commands are now same in server and client connections.
+3. Version advanced to 1.6.0.
+
+[10 June, 2017]
+1. Fixed filter error with date change (midnight).
+2. Version advanced to 1.5.3.
+
+[13 January, 2017]
+1. New tags are producing longer than 24 characters EPC. Limit the decoding process to first 24 characters only.
+2. Version advanced to 1.5.2.
+
+[23 November, 2015]
+1. Disabled beep in negative filtering mode.
+2. Comment out some debug code in reader thread.
+3. Version advanced to 1.5.1.
+
+[15 November,2015]
+1. Field test of negative filtering successful.
+2. Debug logs removed.
+3. Version advanced to 1.5.0.
+
+[07 November, 2015]
+1. Bug removal in tag age detection and deletion from database, causing data loss.
+2. Version advanced to 1.4.13.0.
+
+[16 September, 2015]
+1. Corrected bug in set_antennas command, which prevented it from saving to DataOne.ini
+2. Version advanced to 1.4.12.4.
+
+[15 September, 2015]
+1. Compute average CPU usage from previous value to damp out momentary spikes.
+2. Add new command set_filter_length_temp for temporary filter settings.
+3. Added save disable flags for set_antennas_temp and set_filter_length_temp.
+4. Version advanced to 1.4.12.3.
+5. Presented for event testing.
+
+[12 September, 2015]
+1. Joint testing with Bruno.
+2. Version 1.4.12.2 pushed for field testing.
+
+[01-10 September, 2015]
+1. Changed start mode database parsing implementation to per second iteration based.
+2. Remove bugs in DB storing methods.
+3. Add DB cleanup on old tags.
+4. Version advanced to 1.4.12.
+5. Presented for testing.
+
+[26-31 August, 2015]
+1. Added start mode with negative filter value.
+   Negative filter stores the tags in a database, and uses a timer to process latest values of all stored tags.
+   Only latest tag report for each tag is sent when the StartModeTimer times out.
+2. Make changes to CPU load computation.
+3. Tag detection reduced issue: For loop implemented to read all tags in a tag report.
+4. Version advanced to 1.4.10 and 1.4.11.
+
+
+[19 August, 2015]
+1. Added date logs to start script for time stamping start events.
+2. When set_antennas and set_antennas_temp command is received, if already reading, the reading will be stopped and restarted to implement the changes right away.
+3. Version advanced to 1.4.9.
+
+[04 August, 2015]
+1. ntpdate command timeout changed from 0.4s to 1s.
+
+[03 August, 2015]
+1. Moved the dns timeout echo command further down the start script so that /etc/resolv.conf file is written after the dns deamon is launched.
+   This is to ensure that /etc/resolv.conf file is not overwritten by dns deamon at its launch time.
+2. Version advanced to 1.4.8.
+
+[23 July, 2015]
+1. Removed incorrect record index bug in getreaderinfos command response.
+2. Added DNS timeout from 1s to 5s via this command in start script: echo $'options timeout:5 attempts:1 rotate\nnameserver 82.195.238.202\nnameserver 8.8.8.8'  > /etc/resolv.conf
+3. Version advanced to 1.4.7
+
+[20 July, 2015]
+1. Command added: get_readerinfos
+   Response: message 0 readerinfos |get_timepoint_desc|get_frequency|get_antennas_connected|get_filter_length|get_date_time|readin on/off|record counter|
+2. Version advanced to 1.4.6.
+
+[02 July, 2015]
+1. Adjust manual time from local to UTC, received via set_date_time command.
+   SystemSettings->isTimeZoneAdjustmentEnabled is not set to false upon manual system time update.
+2. Version advanced to 1.4.5.
+
+[29 June, 2015]
+1. Removed bug in StartReading() function. Temporary antenna settings were getting saved.
+2. Added Power vales to get_antennas_connected command.
+3. Version advanced to 1.4.4.
+
+[04 May, 2015]
+1. Issue fix: Hardware clock is not set by ntpdate command. Therefore, reader can start with a wrong time.
+   Hardware clock sync command added to SystemMonitor::SyncSystemTime() function.
+2. Correction in length of set_date_time command. It is 23, not 22.
+3. Version advanced to 1.4.2.
+
+[03 May, 2015]
+1. Bug fix: set_filter_length command unnecessarily generated "... out of range.." message.
+2. Add new parameter bool isDateTimeManuallySet in settings.
+   This is enabled or disabled to indicate if date time has been manually set via "set_date_time" command.
+3. Modify SystemMonitor::SyncSystemTime() to attempt NTP time sync only if date time has not been manually set.
+4. Add format length error checking for "set_date_time" command.
+5. Parameter SystemSettings->isClockAdjustmentEnabled has been replaced with isTimeZoneAdjustmentEnabled.
+6. Add "ntp" as input parameter to "set_date_time" command.
+7. Bug fix: MessageWaitTime in WebUploader was sending a large value. Bug due to incorrectly handling time zone adjustments.
+8. Version advanced to 1.4.1.
+
+[29 April, 2015]
+1. Version number corrected in DataOne.
+2. WebUploader: New field "messagetime" added to the HTTP post message sent to log upload server. This is the message generation time.
+3. WebUploader: New field "messagewaittime" added the HTTP post message sent to log upload server. This is the waiting time in the log message buffer.
+3. Version advanced to 1.4.0.
+
+[29 April, 2015]
+1. Adjust time sync message for timezone.
+2. Version advanced to 1.3.9.
+
+[29 April, 2015]
+1. Log message "Time synchronization successful." in SystemMonitor changed to "Time synchronization successful. Current time: <current date time>".
+2. Version advanced to 1.3.8.
+
+[28 April, 2015]
+1. Problem was faced in field where some readers did not sync time, and time drift reached several minutes.
+   A new timer and function are added to SystemMonitor thread to sync time every five minutes.
+   Existing time sync at every internet connection restore is kept as is.
+   Error codes returned by Qprocess and ntpdate command are parsed and appropriate log statement is generated.
+   Success or error logs generated by time sync function are uploaded to log update server.
+2. Version advanced to 1.3.7.
+
+[19 February, 2015]
+1. set_date_time command not working. "date" command changed in OS. Date format corrected in code.
+2. "/sbin/hwclock" command to use "-w" option.
+3. Limiter for valid range (0-99999) implemented for "set_filter_length" command.
+4. Version advanced to 1.3.6.
+
+[14 February, 2015]
+1. Corrected issue with Sdt command, where sending of normal records was not blocked during sending records from file.
+2. Version advanced to 1.3.5.
+
+[12 February, 2015]
+1. NTP date seems to take moe than 3 seconds to sync with time.datasport.com.
+   To prevent application freeze, ntpdate command is launch now in QProcess::startDetached();
+2. ConnectLLRP(); Sometimes, when application crashes, at restart it can not connect to the reader through LLRP.
+   Added a do..while loop, and qApp.quit() to restart the app until connection is established.
+3. Version advanced to 1.3.4.
+
+[29 January, 2015]
+Bug fix for Reader number being set 0.
+Reason: IP version 6 is enabled in Octane firmware 5.2.1, and OS now returns IPv6 address for each interface before the IPv4 address.
+So, DataOne was trying to interpret IPv6 address as IPv4 address, resulting a 0.
+Fixed with specific protocol check on each returned IP address.
+IPv6 and local loop addresses are ignored.
+
+
+[09 January, 2015]
+1. Changed start script to better handle empty files created due to HTTP responses and proxies.
+
+    reader_no=$(/sbin/ifconfig | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | cut -d '.' -f4 | awk '{print $1}')
+
+    if [ -d /mnt/usbfs/usbsda1 ] ; then
+            echo "############# UPDATE #############" >> /mnt/usbfs/usbsda1/log/log.txt
+            echo "Reader No. $reader_no" >> /mnt/usbfs/usbsda1/log/log.txt
+            echo "Downloading latest DataOne from http" >> /mnt/usbfs/usbsda1/log/log.txt
+
+            if [ -f /cust/app/DataOne ] ; then
+                    curl -f -o /mnt/usbfs/usbsda1/DataOne.upg "http://www.datasport.ag/sys/d1_update.cfm?f=DataOne&readerno=$reader_no" -z /cust/app/DataOne -m180
+            else
+                    curl -f -o /mnt/usbfs/usbsda1/DataOne.upg "http://www.datasport.ag/sys/d1_update.cfm?f=DataOne&readerno=$reader_no" -m180
+            fi
+
+            filesize=$(du -k /mnt/usbfs/usbsda1/DataOne.upg | awk '{print $1}')
+            if [ $filesize -gt 4000 ] ; then
+                    cp -f /mnt/usbfs/usbsda1/DataOne.upg /cust/app/DataOne
+                    rm /mnt/usbfs/usbsda1/DataOne.upg
+
+                    echo "Downloading latest DataOne.ini from http" >> /mnt/usbfs/usbsda1/log/log.txt
+                    if [ -f /cust/app/DataOne.ini ] ; then
+                            curl -f -o /mnt/usbfs/usbsda1/DataOne.ini.upg "http://www.datasport.ag/sys/d1_update.cfm?f=DataOne.ini&readerno=$reader_no" -z /cust/app/DataOne.ini -m30
+                    else
+                            curl -f -o /mnt/usbfs/usbsda1/DataOne.ini.upg "http://www.datasport.ag/sys/d1_update.cfm?f=DataOne.ini&readerno=$reader_no" -m30
+                    fi
+
+                    cp -f /mnt/usbfs/usbsda1/DataOne.ini.upg /cust/app/DataOne.ini
+                    rm /mnt/usbfs/usbsda1/DataOne.ini.upg
+            fi
+            echo "##################################" >> /mnt/usbfs/usbsda1/log/log.txt
+    fi
+
+2. Put in max wait time for each file in Curl command. -m180 for DataOne and -m30 for DataOne.ini
+3. Version advanced to 1.3.3.
+4. Source code backed up.
+
+[07 January, 2015]
+1. Moved DataOne version number to settings.h file from DataOne.ini
+2. Changed start script to download latest DataOne and DataOne.ini files from web URL at startup.
+3. Added error message log regarding repeat Sx and Sdt commands with 30 seconds.
+4. Moved readings status setting from DataOne.ini to new file ReaderStatus.ini.
+   Reason, because whenever DataOne.ini will be updated from web server, reading status will be lost.
+5. Make changes to Settings.h and Settings.cpp to handle new ReaderStatus.ini.
+6. Edited DataOne.ini
+7. Edited DataOne.ini.master
+8. start script edited to include following commands:
+        cd /cust/app
+        echo "############# UPDATE #############" >> /mnt/usbfs/usbsda1/log/log.txt
+        echo "Downloading latest DataOne from http" >> /mnt/usbfs/usbsda1/log/log.txt
+        wget -o /mnt/usbfs/usbsda1/log/log.txt http://www.datasport.ag/sys/d1_update/DataOne
+        echo "Downloading latest DataOne.ini from http" >> /mnt/usbfs/usbsda1/log/log.txt
+        wget -o /mnt/usbfs/usbsda1/log/log.txt http://www.datasport.ag/sys/d1_update/DataOne.ini
+        echo "##################################" >> /mnt/usbfs/usbsda1/log/log.txt
+
+8. Build version advanced to 1.3.2.
+9. CPU usage = 17-21%
+
+[05 January, 2015]
+1. Fixed SX command; problem with file seek position caused records to be searched always from beginning.
+
+[27 December, 2014]
+1. New commend "Sdt <datetime>" added to all TCP connections, except console.
+2. Code optimizations for reducing CPU usage.
+3. Intermediate build 1.3.0 consumed high CPU (17-24%).
+4. Final build version 1.3.1.
+
+[02 December, 2014]
+1. Add new setting LogUploadServerAddress in DataOne.ini
+2. Add new setting LogUploadServerUseSSL in DataOne.ini
+3. Modify webuploader.cpp to set URL http(s) prefix based on LogUploadServerUseSSL setting in ini file.
+4. Make sure SSL backend uses SSL/TLS protocol auto-negotiate.
+5. Modify mainthread.cpp to log new settings.
+6. Version advanced to 1.2.2.
+
+[17 February, 2014]
+1. Fixed bug in GPIOHandler::UpdateGpo3Status() where GPIO status was inverted and on external power loss the GPIO3 LED was turned off.
+2. Replaced files: "DataOne.ini" "DataOne.ini.master" "TimeZone.ini"
+3. Version advanced to 1.2.1.
+4. Compile script updated to accommodate copying TimeZone.ini from project main folder to /app folder in VM.

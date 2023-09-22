@@ -1,0 +1,102 @@
+#!/bin/bash
+clear
+
+echo Executing qmake
+qmake
+echo --------------------------------------
+
+echo Executing make
+make
+size DataOne
+echo --------------------------------------
+
+echo Stripping debug symbols
+arm_v5t_le-strip DataOne
+echo --------------------------------------
+
+echo Size of new executable is:
+size DataOne
+chmod 777 DataOne -v
+echo --------------------------------------
+
+echo Copying application files to /home/revolution/Work/cap_input/app/
+cp DataOne /home/revolution/Work/cap_input/app/ -v
+cp DataOne /mnt/hgfs/Shared_Folder/ -v
+cp DataOne.ini /home/revolution/Work/cap_input/app/ -v
+rm DataOne
+
+chmod 777 /home/revolution/Work/cap_input/app/DataOne.ini.master -v
+cp DataOne.ini.master /home/revolution/Work/cap_input/app/DataOne.ini.master -v
+chmod -w -x /home/revolution/Work/cap_input/app/DataOne.ini.master -v
+
+cp TimeZone.ini /home/revolution/Work/cap_input/app/ -v
+cp start.sh /home/revolution/Work/cap_input/start -v
+cp cap_desc.in /home/revolution/Work -v
+
+#rm *.o
+#rm moc*.*
+
+echo --------------------------------------
+
+echo Generating upgrade file
+cd /home/revolution/Work
+./generate_upg_file
+rm /mnt/hgfs/Shared_Folder/cap.upg
+cp cap.upg /mnt/hgfs/Shared_Folder/ -v
+echo --------------------------------------
+
+echo Zipping the Upgrade File
+zip -v9u cap cap.upg
+echo --------------------------------------
+
+echo Moving upgrade file to Shared_Folder
+mv cap.zip /mnt/hgfs/Shared_Folder/ -v
+echo --------------------------------------
+
+echo Zipping DataOne binary only
+cd /mnt/hgfs/Shared_Folder
+zip -v9u DataOne DataOne
+rm DataOne
+echo --------------------------------------
+
+
+
+echo Uploading files to Test Reader
+cd /home/revolution/Work/cap_input/app/
+echo --------------------------------------
+
+echo Uploading "DataOne"
+curl -T DataOne -u root:impinj ftp://212.60.37.175//cust/app/DataOne
+#curl -T DataOne -u root:dssuper8300 ftp://212.60.37.176//cust/app/DataOne
+echo --------------------------------------
+
+echo Uploading "DataOne.ini"
+#curl -T DataOne.ini -u root:impinj ftp://212.60.37.175//cust/app/DataOne.ini
+#curl -T DataOne.ini -u root:dssuper8300 ftp://212.60.37.176//cust/app/DataOne.ini
+echo --------------------------------------
+
+#echo Uploading "ReaderStatus.ini"
+#curl -T ReaderStatus.ini -u root:dssuper2737 ftp://212.60.37.172//cust/app/ReaderStatus.ini
+#echo --------------------------------------
+
+
+#echo Uploading "start"
+#cd /home/revolution/Work/cap_input
+#curl -T start -u root:dssuper388c ftp://212.60.37.174//cust/start
+#echo --------------------------------------
+
+#echo Uploading "TimeZone.ini"
+#curl -T TimeZone.ini -u root:dssuper2737 ftp://212.60.37.172//cust/app/TimeZone.ini
+#echo --------------------------------------
+
+
+#echo Uploading "ntp.conf"
+#curl -T ntp.conf -u root:dssuper2737 ftp://212.60.37.172//cust/app/ntp.conf
+#echo --------------------------------------
+
+
+echo
+echo
+echo Done.
+echo
+

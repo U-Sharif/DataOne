@@ -1,0 +1,440 @@
+****************
+LIST OF COMMANDS
+****************
+
+A. Telnet Clients (ports 2233, 3322, and server connection)
+
+	1.	ping dd.MM.yyyy hh:mm:ss.zzz
+	
+			dd = Day
+			MM = Month
+			yyyy = Year
+		
+			hh = Hour
+			mm = Minutes
+			ss = Seconds
+			zzz = Milliseconds
+		
+		Output: Upon receiving this command, DataOne application compares the date and time to its local current time.
+				If, there is a difference of more than 1 second, application will generate a "message 80 x seconds\r\n" response to the sending client.
+				If DataOne application receives a manual time update via "set_date_time" command, time comparison will not be done, and command will be ignored.
+		
+				This command can also be issued without the date and time. In this case, the command will be ignored.
+			
+			
+	2.	exit
+	
+		Output:	Tcp telnet connection will be closed by the application.
+		
+		
+        3.(a)	SX
+	
+			X = Record number
+		
+		Output:	DataOne application will start sending records to the sending client, starting from record number X.
+                        The type of records received (data or filtered) depends upon the port on which client is connected.
+                        DataOne port 2233 - Data records.
+                        DataOne port 3322 - Filtered records.
+
+        3.(b)   Sdt dd.MM.yyyy hh:mm:ss.zzz
+
+                Output: DataOne application will start sending records to the sending client, starting from the given time.
+                        The type of records received (data or filtered) depends upon the port on which client is connected.
+                        DataOne port 2233 - Data records.
+                        DataOne port 3322 - Filtered records.
+
+				
+	4.	get_d1_version
+	
+		Output:	message 0 %1\r\n
+		
+				%1 = version number string.
+				
+				
+	5.	get_log_files_dir
+	
+		Output:	message 0 %1 (%2 KB)\r\n
+		
+				%1 = File Name
+				%2 = File Size
+	
+	
+	6.	get_date_time
+	
+		Output: message 0 dd.MM.yyyy hh:mm:ss.zzz\r\n
+	
+				dd = Day
+				MM = Month
+				yyyy = Year
+		
+				hh = Hour
+				mm = Minutes
+				ss = Seconds
+				zzz = Milliseconds
+	
+	
+	7.	get_frequency
+	
+		Output:	message 0 %1\r\n
+		
+				%1 = A/B/C/D/Auto
+				
+                                A = 865.7 MHz(old)  916.3(new)
+                                B = 866.3 MHz(old)  917.5(new)
+                                C = 866.9 MHz(old)  918.7(new)
+                                D = 867.5 MHz(old)  0(new)
+                                Auto = Auto set by the reader, from above 4 frequencies.
+				
+				
+	8.	get_reader_mode
+	
+		Output:	message 0 %1\r\n
+				
+				%1 = AutoSet Dense Reader / Dense Reader (M=8) / Dense Reader (M=4) / Hybrid Mode / Max Troughput
+				
+				
+	9.	get_search_mode
+	
+		Output:	message 0 %1\r\n
+		
+				%1 = Dual Target / Reader Selected / Single Target / Single Target with Suppression
+				
+				
+	10.	get_session
+	
+		Output:	message 0 %1\r\n
+		
+				%1 = Session number (integer)
+				
+				
+	11.	get_tag_volume
+	
+		Output:	message 0 %1\r\n
+		
+				%1 = A-B
+				
+					A = Start Range (integer)
+					B = End Range (integer)
+				
+				
+	12.	get_antennas
+	
+		Output:	message 0 %1\r\n
+		
+				%1 = x,A x,A x,A x,A
+				
+					x = Antenna port number (1-4)
+					A = Antenna power (See Appendix A to SpeedwayR_installation_and_operations_guide_4-8-0.pdf)
+	
+	
+        13.     get_beep_duration
+	
+		Output:	message 0 %1\r\n
+			
+				%1 = Beep duration value (unsigned integer)
+	
+	
+	14.	get_beep
+	
+		Output:	message 0 %1\r\n
+		
+				%1 = unfiltered / filtered
+				
+				
+	15.	get_reader_no
+	
+		Output:	message 0 %1\r\n
+			
+				%1 = Reader ID (unsigned integer)
+				
+				
+	16.	get_timepoint_desc
+	
+		Output:	message 0 %1\r\n
+		
+				%1 = Time point description (string)
+				
+				
+	17.	get_filter_length
+	
+		Output:	message 0 %1\r\n
+		
+				%1 = Filter length (unsigned integer)
+				
+				
+	18.	get_filter_drift
+	
+		Output:	message 0 %1\r\n
+		
+				%1 = Filter drift (integer)
+				
+				
+	19.	get_antennas_connected
+
+		Output:	message 0 %1\r\n
+		
+                                %1 = a:A,B a:A,B a:A,B a:A,B
+				
+					a = Antenna port number (1-4)
+                                        A = Connected / Disconnected / N/A / Unknown
+                                        B = Antenna power (See Appendix A to SpeedwayR_installation_and_operations_guide_4-8-0.pdf)
+	
+	
+	20.	clear_buffer
+	
+		Output: Nil
+		Action:	Current data and filtered log files are closed and new files are opened.
+				Reset record counters..
+				If records are being sent to a client via SX command, transfer will be aborted.
+				
+				
+	21.	connect_llrp			
+				
+		Output: Nil
+		Action:	Connection is initiated to RFID radio via LLRP protocol.
+		
+		
+	22.	disconnect_llrp
+	
+		Output: Nil
+		Action:	Connection is terminated to RFID radio via LLRP protocol.
+		
+		
+	23.	start_reading
+	
+		Output: Tag Records.
+		Action:	Start receiving tag reports from LLRP, format the reports, and send the records to all connected telnet clients and timing server.
+		
+		
+	24.	stop_reading
+		
+		Output: Tag Records.
+		Action:	Stop receiving tag reports from LLRP, and stop sending records to telnet clients and timing server.
+		
+		
+	25.	action_clear_all_logs
+
+		Output: Nil
+		Action:	Delete all data and filtered log files, including currently used files.
+				Reset record counters.
+				
+				
+	26.	set_date_time=dd.MM.yyyy hh:mm:ss.zzz
+	
+                        dd = Day
+                        MM = Month
+                        yyyy = Year
+		
+                        hh = Hour
+                        mm = Minutes
+                        ss = Seconds
+                        zzz = Milliseconds
+	
+		Output: Nil
+		Action:	Set the new date and time in OS clock.
+                        Kill NTP daemon, to prevent automatic date update.
+                        Synchronize OS clock to hardware clock.
+                        Disable timezone adjustment in tag record timestamps.
+                        If new date and time is prior to the current record's data and time, clear the buffers to prevent time anomalies.
+		
+        27.     set_date_time=ntp
+
+                Output: Nil
+                Action:	Start synchronizing reader time with NTP server.
+
+        28.	set_frequency=A / B / C / D / Auto
+	
+                        A = 865.7 MHz(old)  916.3(new)
+                        B = 866.3 MHz(old)  917.5(new)
+                        C = 866.9 MHz(old)  918.7(new)
+                        D = 867.5 MHz(old)  0(new)
+                        Auto = Auto set by the reader, from above 4 frequencies.
+		
+		Output: Nil
+		Action:	Save the frequency in application configuration.
+				New frequency will be applied when the reading is started next time.
+				
+				
+        29.	set_reader_mode=AutoSet Dense Reader / Dense Reader (M=8) / Dense Reader (M=4) / Hybrid Mode / Max Troughput
+	
+		Output: Nil
+		Action:	Save the reader mode in application configuration.
+				New reader mode will be applied when the reading is started next time.
+		
+		
+        30.	set_search_mode=Dual Target / Reader Selected / Single Target / Single Target with Suppression
+	
+		Output: Nil
+		Action:	Save the reader search mode in application configuration.
+				New reader search mode will be applied when the reading is started next time.
+		
+		
+        31.	set_session=Session number (integer)
+	
+		Output: Nil
+		Action:	Save the session number in application configuration.
+				New session number will be applied when the reading is started next time.
+		
+		
+        32.	set_tag_volume=A-B
+				
+				A = Start Range (integer)
+				B = End Range (integer)
+		
+		Output: Nil
+		Action:	Save the tag volume range in application configuration.
+				New tag volume (End Range) will be applied when the reading is started next time.		
+		
+		
+        33.	set_antennas=x,A x,A x,A x,A
+				
+				x = Antenna port number (1-4)
+				A = Antenna power (See Appendix A to SpeedwayR_installation_and_operations_guide_4-8-0.pdf)
+				
+		Output: Nil
+		Action:	Save the antennas configuration in application configuration.
+				New antennas configuration will be applied when the reading is started next time.
+
+				
+	34.	set_antennas_temp=x,A x,A x,A x,A
+				
+				x = Antenna port number (1-4)
+				A = Antenna power (See Appendix A to SpeedwayR_installation_and_operations_guide_4-8-0.pdf)
+				
+		Output: Nil
+		Action:	This command is identical to the previous command, however, the new antenna config is not saved in persistant application configuration.
+				New antennas configuration will be applied when the reading is started next time.
+
+				
+	35.	set_beep_duration=Beep duration value (unsigned integer)
+	
+		Output: Nil
+		Action:	Save the beep duration value in application configuration.
+				New beep duration is implemented immediately.
+
+				
+	36.	set_beep=unfiltered / filtered
+	
+		Output: Nil
+		Action:	Save the beep type in application configuration.
+				New beep type is implemented immediately.
+
+				
+	37.	set_reader_no=Reader ID (unsigned integer)
+	
+		Output: Nil
+		Action:	Save the reader id in application configuration.
+				New reader id is implemented immediately.
+
+				
+	38.	set_timepoint_desc=Time point description (string)
+	
+		Output: Nil
+		Action:	Save the time point description in application configuration.
+				New time point description is implemented immediately.
+
+				
+	39.	set_filter_length=Filter length (unsigned integer)
+				
+		Output: Nil
+		Action:	Save the filter length in application configuration.
+				New filter length is implemented immediately.		
+			
+			
+	40.	set_filter_drift=Filter drift (integer)
+	
+		Output: Nil
+		Action:	Save the filter drift in application configuration.
+				New filter drift is implemented immediately.
+			
+			
+	41.	action_alert=1 / 2 / 3			
+				
+		Output: Nil
+		Action:	Start executing the action alert immediately.
+			
+
+        42.     reader_reboot
+
+                Output: Nil
+                Action: Stop reading.
+                        Stop all running threads.
+                        Disconnect LLRP.
+                        Reboot the RFID reader.
+
+        43.     d1_shutdown
+
+                Output: Nil.
+                Action: Stop reading.
+                        Stop all running threads.
+                        Turn OFF GPOs.
+                        Disconnect LLRP.
+                        Exit DataOne application.
+
+        44.     get_readerinfos
+
+                Output:	message 0 readerinfos %1\r\n
+
+                                %1 = |get_timepoint_desc|get_frequency|get_antennas_connected|get_filter_length|get_date_time|readin on/off|record counter|
+
+        45.     set_filter_length_temp
+
+                Output:	Nil
+                Action: Save the filter length in application configuration temporarily.
+                        New filter length is implemented immediately.
+
+
+
+B.	Console Clients
+
+	1.	exit
+	
+		Output:	Tcp telnet connection will be closed by the application.
+	
+	
+	2.	get_rospec
+
+		Output: Read rospec0 from reader and sent to client.
+	
+	
+	3.	get_running_time
+	
+		Output:	%1 Hrs : %2 Min\n\n
+		
+			%1 = Hours
+			%2 = Minutes
+				
+				
+	4.	get_antennas_connected
+
+		Output:	<<ACTION>> %1\n\n
+		
+				%1 = a:A a:A a:A a:A
+				
+					a = Antenna port number (1-4)
+                                        A = Connected / Disconnected / N/A / Unknown
+
+
+        5.     reader_reboot
+
+                Output: Nil
+                Action: Stop reading.
+                        Stop all running threads.
+                        Disconnect LLRP.
+                        Reboot the RFID reader.
+
+        6.     d1_shutdown
+
+                Output: Nil.
+                Action: Stop reading.
+                        Stop all running threads.
+                        Turn OFF GPOs.
+                        Disconnect LLRP.
+                        Exit DataOne application.
+				
+				
+				
+				
+				
+				
+				

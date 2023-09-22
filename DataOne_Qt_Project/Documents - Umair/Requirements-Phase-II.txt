@@ -1,0 +1,48 @@
+i need new following new commands:
+DONE- get_d1_version --> ex. 0.2
+
+DONE- set_date_time=31.07.2011 14:53:44
+DONE- get_date_time --> send ex. 31.07.2011 14:53:44.601<13><10> back
+
+DONE- set_reader_mode="AutoSet Dense Reader" (or "Dense Reader (M=8)" or "Dense Reader (M=4)" or "Hybrid Mode" or "Max Troughput")
+DONE- get_reader_mode
+
+DONE- set_search_mode="Dual Target" (or "Reader Selected" or "Single Target" or "Single Target with Suppression")
+DONE- get_search_mode
+
+DONE- set_session=0 (or 1 or 2 or 3)
+DONE- get_session
+
+DONE- set_frequency=Auto (or A or B or C or D)
+DONE- get_frequency
+
+about frequency : normaly there are 4 frequencys availabele (865.7 , 866.3 , 866.9 and 867.5)
+so please "numerate" them from the lowest, beginning with A to the highest what would D for 867.5 in this case
+but att. there could be also 20 - right now it hase never had more as 24, so there is not problem with the alphabet
+PS: it is a commun way to work with the alphabet instead with the frequency itselfs - it is easyer
+and please leave also the setting Auto, this is todays way of working and the default, if no setting was made
+
+DONE- set_tag_volume=4-8 (or 1-4, 8-16, 16-32, 32-64, 64-128, 128-256, 256-512, 512-1024)
+DONE- get_tag_volume
+
+DONE- set_antennas=1,31.5 2,31.5 (ex. 1 or/and 2 or/and 3 or/and 4 ar the antenna ports, 31.5 is the power)
+all not mentioned antenna ports need to be switched off
+DONE- get_antennas
+
+DONE- set_beep=unfiltered (or off)
+--> in case set_beep is unfiltered, please set GPO short to high (this make that we hear a beep signal for each tag record)
+DONE- get_beep
+
+DONE- set_reader_no=2 (any number) this helps to know the reader hardware
+DONE- get_reader_no
+
+
+DONE- please store Reader Mode, Search Mode, Session, Frequency, Tag Volume, Antennas, Beep and Reader No in the local config file and
+retrive the setting per default from the config file at the start up of the app)
+
+DONE- instead of sending PING, please send status <actual tag record index#> <reader temperatur><13><10> ex. status 234 34
+
+- please connect after start up of the app automaticaly to 2 servers (timing.datasport.com and timing2.datasport.com,
+port is 13200+Reader No ... for your reader 13200+2= 13202) and send DSDOV<reader version>,<actual tag record index#> ex. DSDOV0.2,234
+in case connection drops, automaticaly reconnect
+and handle this connections, like a client connection (so accept commands and send the records)

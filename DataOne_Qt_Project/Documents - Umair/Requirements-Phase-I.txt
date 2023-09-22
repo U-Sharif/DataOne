@@ -1,0 +1,60 @@
+
+we look for an app that run on Impinj revolutions readers :: http://www.impinj.com/products/reader-speedway-rev.aspx
+Impinj offers a VMware Player with the ready to run EDK :: http://revolution.impinj.com/EDK/
+there is a doc that helps to start the EDK :: http://revolution.impinj.com/EDK/RevolutionInstallGuide.pdf
+there is also a learn center, that explains in a comprehesive way the stuff :: ex. of embedded with some sample apps http://learn.impinj.com/search/label/embedded
+on the EDK it has more samples
+attached you will find more doc about the impinj reader and one more sample app, that we developpet once, based on a sampe app
+
+requirements:
+- app that run on Impinj revolutions readers
+- app has a config file, for ex. setting of the socket port to open
+- app need to start automatically with the reader boot
+- app open a socket port, and listen
+- as a socket connection is established, the app has to send all 20 seconds the string PING<13><10> - this helps to recognize failed connections
+- app accepts following commands
+  PING<13><10>
+  clear_buffer<13><10>
+  start_reading<13><10>
+  stop_reading<13><10>
+  SX<13><10> :: X = is a number >0
+- in case app get PING - then trash that string (this is only that the client app can recognize failed connections)
+- in case of clear_buffer – then empty the locally stored file
+- in case of start_reading - then try to connect the local reader by LLRP protocol, it could be, that the LLRP connection will not be accepted, then just continuously try to access the LLRP connection
+as the LLRP connection is established, then start reading, store the records in a local file and send all records to ALL socket connections
+- in case of stop_reading - then stop reading and disconnect LLRP connection immediately
+- in case of SX then set the send pointer to that record# and send all records from that point on
+- about storing into local file : Impinj uses flash drives, so please store new records all 1000 records or max. each minutes once into the file
+- record format:
+recno#,EPC,Date Time,Antenna#,RSSI<13><10>
+10219,FFFF00020000000000000875,04.05.2011 19:16:47.898,2,-57<13><10>
+10220,FFFF00020000000000000875,04.05.2011 19:16:47.898,2,-62<13><10>
+10221,000000000000000000000875,04.05.2011 19:16:47.898,2,-76<13><10>
+- make sure, that i can connect and drive the app with telnet
+
+app need to be:
+- coded as it can be expected from a professional developer (concept, encapsulation, documentation)
+- 100% stable, so make a stable exception handling
+- follow the roules and tips from Impinjs EDK dev. Documentation
+- make sure to not stress the reader more as really needed
+- i need source, documentation how to setup the development environment (in case i have to take care about anything, that is not in the getting started doc of Impinj) and any information how to compile and deploy the app on the Impinj reader
+- and provide also the .upg file
+- please use the default passwords as proposed in the Impinj EDK doc
+
+access the reader:
+- please provide you ip address that you access the internet - if this is not statically, provide the network range that you access the internet
+- i will open then telnet, http and ftp - so you can create an initial upg, upload them by http - reboot the reader and access the reader then the shell by telnet
+
+
+please read the docs, as this helps, that you understand the hardware and Impinjs tips
+do not spend to mutch time in trying resolve issues that you do not understand - i have some experience with the reader, if this does not helps, i have access to the dev support from Impinj
+--------------------------------------------------------------------------------------------------------
+
+Reader mode: AutoSet Dense Reader
+Seach mode: Dual Target
+Session: 0
+Frequency: Auto
+Tag volume: 4-8
+no other Filters, no RSSI and no time filter
+
+

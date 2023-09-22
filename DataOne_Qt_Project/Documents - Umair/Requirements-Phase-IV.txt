@@ -1,0 +1,73 @@
+REQUIREMENTS PHASE-IV
+
+1.  GPIO
+    (a) Input 1 : Start & stop reading button, if reading is off and an input will be triggered, then start_reading and send message 10 reading started manually,  and if reading is already on, then switch off and send message 10 reading stopped manually
+    (b) Input 2 : If this input level goes up, then start reading, if this input level goes down, and start reading was also started by input 2 level trigger, then stop reading --- but do not stop reading, if reading was started by input 1 or a tcp command
+    (c) Input 3 : Battery voltage level control battery level  will be send all few seconds, there it will be a pulse and short time later again a pulse
+                  I will get soon a factor, where we can then calculate thebattery level = stop pulse – start pulse * factor = battery level voltage – please send this information then as new parameter in status : status <number of records> <temperature> <voltage>
+
+                  About logic for voltage calc
+
+                  - pulse for for voltage will be send continuously, there are no breaks
+                  - take the start of the pulse, as the pulse itself will not always the same length
+                  - the gap between the pulses: 1 sec = 15 volt or 3 sec = 5 volt or 1.2 sec = 12.5 volt (15 / 1.2 = 12.5 volt)
+
+                  please take 3 measurements, before you change the voltage value more then 5% (this can happen, if we plug ex. a new fully charged battery)
+
+
+    (d) Output 1 : Lamp that shows if reading is on or off – this lamp should also go on, if reading will be started by the tcp command
+    (e) Output 2 : Lamp that shows if any client is connected on port 2233 or 3322 or if any timing server connection is established
+    (f) Output 3 : The beep (already implemented), please move to output 3
+
+2.  Setup at start_reading only antennas, that are defined and are connected.
+    e.g, 4 antennas are defined in the config, but only 3 are connected at start_reading – then do not setup the 4th antenna
+    If there are more antennas detected (and defined) during reading is on, then accept this antenna
+
+3.  Revert the footprint into the memory and not anymore as file on the usb stick
+
+4.  Time sync the reader : i would like to have 2 modes (if possible)
+    - auto : sync with NTP time.datasport.com, reader should show then our local time (and not UTC or ??) and he should switch themselves between summer / winter time
+    - manual: being set like it was planed to be today, if possible to find a way to set also .00 of seconds
+
+    if auto time sync from NTP is not possible, we could setup an adjust time base over a tcp socket or better over http protocol
+
+5.  Periodic command ping that our software will send, will have a date time parameter so ex. ping 04.10.2011 19:32:32.73
+    Send warning message 80 if time deferre more then 1 sec
+
+6.  New TCP command action_alert=type (3 types)
+    (a) type 1: do make a sound 2x times beep, pause, 2 times beep, etc. for 15 seconds and blink the lamps (reading and client/network connections)  in the same way
+    (b) type 2: same but with 4x times
+    (c) type 3: long beep (like 4x times) etc. (8x ?)
+
+7.  New tcp command get_log_files_dir : send a dir of the appropriated log files
+8.  net tcp command action_clear_all_logs : clear dir data, filtered and log
+
+
+9.  Handle a file with reader serial numbers (but can anything else to recognize the reader) and readerno, ex.
+    Serial        readerno
+    aaa           1
+    bbb           2
+    This file will be created once and deployed on all readers once
+    This allow me, to deploy on DataOne.ini with a cap on the /cust/app dir (and not anymore on the usb stick) – so reader app will lookup themselves, with readerno he has to apply
+
+10. survey continuously the reader resources, like
+    - free memory
+    - cpu
+    - temperature
+    - does the stick is plugged, and log files can be written (enough free space)
+    - number of antennas does not change during reading is started
+    and to all port 3322 and timing server connections
+    warnings as message 80 warning text
+    errors as message 90 errortext
+
+11. On the impinj reader is running an internal webserver - can you add there a page, that shows the xml output of the Impinj menu command “show rfid llrp rospec 0”
+    If this is not possible, would it be possible to enter a command on the console log? There is an important output in the Impinj menu with the command “show rfid llrp rospec 0” that I would like to be able to see within the console port 9999
+
+12. Help to setup the development environment at our side (just for safety) or upload your image so that we can download it.
+
+13. Clean up the code, and put more comments – please consider to invest some hours into that, specially the code documentation need to be improved.
+
+
+
+get_antennas_connected
+
