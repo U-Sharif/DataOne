@@ -1,0 +1,17 @@
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\obj\x86\Debug\DataOne.exe
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\obj\x86\Debug\DataOne.pdb
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\bin\x86\Debug\DataOne.exe
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\bin\x86\Debug\DataOne.pdb
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\bin\x86\Debug\DataOneLib.dll
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\bin\x86\Debug\Impinj.OctaneSdk.dll
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\bin\x86\Debug\LLRP.dll
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\bin\x86\Debug\LLRP.Impinj.dll
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\bin\x86\Debug\DataOneLib.pdb
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\bin\x86\Debug\Impinj.OctaneSdk.xml
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\obj\x86\Debug\ResolveAssemblyReference.cache
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\obj\x86\Debug\DataOne.ConnectForm.resources
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\obj\x86\Debug\DataOne.DoubleBufferedListView.resources
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\obj\x86\Debug\DataOne.MainForm.resources
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\obj\x86\Debug\DataOne.DateTimeForm.resources
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\obj\x86\Debug\GenerateResource.read.1.tlog
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOne\obj\x86\Debug\GenerateResource.write.1.tlog

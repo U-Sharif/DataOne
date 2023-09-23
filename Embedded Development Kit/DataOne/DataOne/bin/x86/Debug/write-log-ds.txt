@@ -1,0 +1,2032 @@
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 10.90.3.10
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 1
+-----------
+Started at 17.06.2011 17:48:18
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = off
+beep_reader = off
+beep_type = 0
+Can't write tag 000000000000000000000002
+Can't write tag 000000000000000000000002
+Can't write tag 000000000000000000000002
+E280110020003519EE870000,B2BB00030000000000000C8B,0,100000000000000000000000
+E280110020003519EE870000,B2BB00030000000000000C8B,1,100000000000000000000001
+Can't write tag B2BB00030000000000000C8B
+E280110020003499EE870000,B2BB00030000000000000C8C,2,100000000000000000000002
+E280110020003499EE870000,B2BB00030000000000000C8C,3,100000000000000000000003
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = off
+beep_reader = off
+beep_type = 0
+-----------
+Started at 17.06.2011 20:19:44
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = off
+beep_reader = off
+beep_type = 0
+E280110020003499EE870000,100000000000000000000003,0,300800000000000000000000
+Can't write tag 100000000000000000000003
+Can't write tag 100000000000000000000003
+E280110020003559EE870000,100000000000000000000001,0,300800000000000000000000
+Can't write tag 100000000000000000000001
+Can't write tag 100000000000000000000001
+E280110020003519EE870000,100000000000000000000000,0,300800000000000000000000
+Can't write tag 100000000000000000000000
+Can't write tag 100000000000000000000000
+E2801100200034D9EE870000,100000000000000000000002,0,300800000000000000000000
+Can't write tag 100000000000000000000002
+Can't write tag 100000000000000000000002
+E280110020003519EE870000,300800000000000000000000,1,300800000000000000000001
+E280110020003519EE870000,300800000000000000000000,1,300800000000000000000001
+E280110020003519EE870000,300800000000000000000000,1,300800000000000000000001
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = off
+beep_reader = off
+beep_type = 0
+-----------
+Started at 17.06.2011 21:01:29
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = off
+beep_reader = off
+beep_type = 0
+E280110020003499EE870000,300800000000000000000000,1,B2BBFFFF0000000000000001
+E280110020003519EE870000,300800000000000000000001,2,B2BBFFFF0000000000000002
+Wrote tags
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 18.06.2011 18:56:22
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 000000000000000000000002
+Can't write tag 000000000000000000000002
+Can't write tag 000000000000000000000002
+E280110020003499EE870000,B2BBFFFF0000000000000001,0,12020000
+Can't write tag B2BBFFFF0000000000000001
+Can't write tag B2BBFFFF0000000000000001
+E280110020003519EE870000,B2BBFFFF0000000000000002,1,12020001
+Can't write tag B2BBFFFF0000000000000002
+Can't write tag B2BBFFFF0000000000000002
+E280110020003559EE870000,300800000000000000000001,2,12020002
+E280110020003559EE870000,300800000000000000000001,3,12020003
+Can't write tag 300800000000000000000001
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 26.06.2011 16:48:30
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+E280110020003519EE870000,12020001,0,999999990000000000000000
+Can't write tag 12020001
+Can't write tag 12020001
+E280110020003499EE870000,12020000,1,999999990000000000000001
+Can't write tag 12020000
+Can't write tag 12020000
+E2801100200034D9EE870000,12020003,2,999999990000000000000002
+Can't write tag 12020003
+Can't write tag 12020003
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 26.06.2011 17:09:32
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+E280110020003519EE870000,999999990000000000000000,0,123000000000000000000000
+Can't write tag 999999990000000000000000
+Can't write tag 999999990000000000000000
+E280110020003499EE870000,999999990000000000000001,1,123000000000000000000001
+Can't write tag 999999990000000000000001
+Can't write tag 999999990000000000000001
+E2801100200034D9EE870000,999999990000000000000002,2,123000000000000000000002
+Can't write tag 999999990000000000000002
+Can't write tag 999999990000000000000002
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 27.06.2011 13:13:11
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 27.06.2011 14:15:48
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Invalid tag prerequisite
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 27.06.2011 14:18:35
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Invalid tag prerequisite
+Invalid tag prerequisite
+Invalid tag prerequisite
+Can't write tag 12020002
+Can't write tag 123000000000000000000002
+Wrote tags
+Invalid tag prerequisite
+Can't write tag 12020002
+Can't write tag 123000000000000000000002
+Wrote tags
+Invalid tag prerequisite
+Can't write tag 12020002
+E280110020003519EE870000,123000000000000000000000,0,000D1624240553574F524464
+Wrote tags
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 27.06.2011 14:29:32
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Connecting to barcode reader
+Invalid tag prerequisite
+Can't write tag 12020002
+Can't write tag 000D1624240553574F524464
+Wrote tags
+Invalid tag prerequisite
+Can't write tag 12020002
+Can't write tag 123000000000000000000002
+Wrote tags
+Invalid tag prerequisite
+Can't write tag 12020002
+Can't write tag 123000000000000000000002
+Wrote tags
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 27.06.2011 14:36:24
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Invalid tag prerequisite
+Can't write tag 12020002
+Can't write tag 123000000000000000000002
+Wrote tags
+Invalid tag prerequisite
+Can't write tag 12020002
+Can't write tag 000D1624240553574F524464
+Wrote tags
+Invalid tag prerequisite
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 27.06.2011 14:41:46
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+E2801100200034D9EE870000,123000000000000000000002,4,111000000000000000000004
+Can't write tag 123000000000000000000002
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 27.06.2011 14:44:47
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 000D1624240553574F524464
+Can't write tag 000D1624240553574F524464
+Can't write tag 000D1624240553574F524464
+Can't write tag 111000000000000000000004
+Can't write tag 111000000000000000000004
+Can't write tag 111000000000000000000004
+Can't write tag 123000000000000000000001
+Can't write tag 123000000000000000000001
+Can't write tag 123000000000000000000001
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 111000000000000000000004
+Can't write tag 111000000000000000000004
+Can't write tag 111000000000000000000004
+Can't write tag 123000000000000000000001
+Can't write tag 123000000000000000000001
+Can't write tag 123000000000000000000001
+Can't write tag 000D1624240553574F524464
+Can't write tag 000D1624240553574F524464
+Can't write tag 000D1624240553574F524464
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 000D1624240553574F524464
+Can't write tag 000D1624240553574F524464
+Can't write tag 000D1624240553574F524464
+Can't write tag 123000000000000000000001
+Can't write tag 123000000000000000000001
+Can't write tag 123000000000000000000001
+Can't write tag 111000000000000000000004
+Can't write tag 111000000000000000000004
+Can't write tag 111000000000000000000004
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+E280110020003519EE870000,000D1624240553574F524464,5,12000005
+Can't write tag 000D1624240553574F524464
+Can't write tag 000D1624240553574F524464
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+E280110020003499EE870000,123000000000000000000001,6,12000006
+Can't write tag 123000000000000000000001
+Can't write tag 123000000000000000000001
+E2801100200034D9EE870000,111000000000000000000004,7,12000007
+Can't write tag 111000000000000000000004
+Can't write tag 111000000000000000000004
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 3
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 30.06.2011 14:31:51
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+E280110020003519EE870000,12000005,0,12000000
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000005
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 30.06.2011 14:38:19
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000000
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+E280110020003519EE870000,12000000,0,12345678
+Can't write tag 12000000
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 30.06.2011 14:45:09
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 4-8
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+Can't write tag 12020002
+E280110020003519EE870000,12345678,0,FF000D1624415353574F5254
+Can't write tag 12345678
+Can't write tag 12345678
+Can't write tag 12345678
+Can't write tag 12345678
+Can't write tag 12345678
+Can't write tag 12345678
+Can't write tag 12345678
+Can't write tag 12345678
+Can't write tag 12345678
+Can't write tag 12345678
+Can't write tag 12345678
+Can't write tag 12345678
+E280110020003499EE870000,12000006,1,FF000D1624415353574F5255
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+Can't write tag 12000006
+E2801100200034D9EE870000,12000007,2,FF000D1624415353574F5256
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+Can't write tag 12000007
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = 
+search_mode = 
+session = 0
+frequency = 
+tag_volume = 
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+master = app
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 28.07.2011 8:57:14
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = 
+search_mode = 
+session = 0
+frequency = 
+tag_volume = 
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+master = app
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Connecting to barcode reader
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = 
+search_mode = 
+session = 0
+frequency = 
+tag_volume = 
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+master = app
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag FF000D1624415353574F5256
+Can't write tag FF000D1624415353574F5255
+Wrote tags
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 1-4
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+master = app
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 1-4
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+master = app
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag FF000D1624415353574F5256
+Can't write tag FF000D1624415353574F5255
+Wrote tags
+Can't write tag FF000D1624415353574F5255
+Can't write tag FF000D1624415353574F5256
+Wrote tags
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 1-4
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+master = app
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 28.07.2011 9:09:00
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 1-4
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+master = app
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Invalid tag prerequisite
+Invalid tag prerequisite
+Invalid tag prerequisite
+Invalid tag prerequisite
+Invalid tag prerequisite
+Invalid tag prerequisite
+Invalid tag prerequisite
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 1-4
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 13
+skip_special = off
+master = app
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 000000000000000000000002
+Can't write tag 000000000000000000000002
+Can't write tag 000000000000000000000002
+Can't write tag 000000000000000000000002
+Can't write tag 000000000000000000000002
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 1-4
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 1
+skip_special = off
+master = app
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Can't write tag 000000000000000000000002
+E280110020003499EE870000,FF000D1624415353574F5255,0,000000000000000000000000
+E2801100200034D9EE870000,FF000D1624415353574F5256,0,000000000000000000000000
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 1-4
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 1
+skip_special = off
+master = app
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+Invalid tag prerequisite
+Invalid tag prerequisite
+device = 1
+clip = 5000
+description = R1
+address = 212.60.37.174
+reader_port = 
+min_rssi = -99
+port = 3322
+reader_mode = AutoSet Dense Reader
+search_mode = Reader Selected
+session = 0
+frequency = Auto
+tag_volume = 1-4
+barcode_addr = 
+barcode_port = 10002
+bib_filter = 3
+repeat_write = 1
+skip_special = off
+master = reader
+antenna_1 = on
+antenna_2 = on
+antenna_3 = on
+antenna_4 = on
+antenna_1_power = 31,5
+antenna_2_power = 31,5
+antenna_3_power = 31,5
+antenna_4_power = 31,5
+series = FFFF
+beep_pc = on
+beep_reader = off
+beep_type = 0
+-----------
+Started at 07.08.2011 11:18:18

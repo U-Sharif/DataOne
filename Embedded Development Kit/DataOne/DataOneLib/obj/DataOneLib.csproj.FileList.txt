@@ -1,0 +1,15 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\DataOneLib.dll
+bin\Debug\DataOneLib.pdb
+bin\Debug\Impinj.OctaneSdk.xml
+obj\Debug\DataOneLib.dll
+obj\Debug\DataOneLib.pdb
+bin\x86\Debug\DataOneLib.dll
+bin\x86\Debug\DataOneLib.pdb
+bin\x86\Debug\Impinj.OctaneSdk.xml
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\DataOneLib.dll
+obj\x86\Debug\DataOneLib.pdb
+bin\x86\Debug\Impinj.OctaneSdk.dll
+bin\x86\Debug\LLRP.dll
+bin\x86\Debug\LLRP.Impinj.dll

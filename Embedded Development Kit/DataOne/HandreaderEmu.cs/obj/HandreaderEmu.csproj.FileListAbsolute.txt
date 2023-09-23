@@ -1,0 +1,15 @@
+F:\RFID\DataOne\DataOne\HandreaderEmu.cs\bin\Debug\HandreaderEmu.cs.exe
+F:\RFID\DataOne\DataOne\HandreaderEmu.cs\bin\Debug\HandreaderEmu.cs.pdb
+F:\RFID\DataOne\DataOne\HandreaderEmu.cs\obj\Debug\ResolveAssemblyReference.cache
+F:\RFID\DataOne\DataOne\HandreaderEmu.cs\obj\Debug\HandreaderEmu.cs.exe
+F:\RFID\DataOne\DataOne\HandreaderEmu.cs\obj\Debug\HandreaderEmu.cs.pdb
+C:\RFID\DataOne\DataOne\HandreaderEmu.cs\bin\Debug\HandreaderEmu.cs.exe
+C:\RFID\DataOne\DataOne\HandreaderEmu.cs\bin\Debug\HandreaderEmu.cs.pdb
+C:\RFID\DataOne\DataOne\HandreaderEmu.cs\obj\Debug\ResolveAssemblyReference.cache
+C:\RFID\DataOne\DataOne\HandreaderEmu.cs\obj\Debug\HandreaderEmu.cs.exe
+C:\RFID\DataOne\DataOne\HandreaderEmu.cs\obj\Debug\HandreaderEmu.cs.pdb
+D:\eugeny-projects\DataOne\HandreaderEmu.cs\bin\Debug\HandreaderEmu.cs.exe
+D:\eugeny-projects\DataOne\HandreaderEmu.cs\bin\Debug\HandreaderEmu.cs.pdb
+D:\eugeny-projects\DataOne\HandreaderEmu.cs\obj\Debug\ResolveAssemblyReference.cache
+D:\eugeny-projects\DataOne\HandreaderEmu.cs\obj\Debug\HandreaderEmu.cs.exe
+D:\eugeny-projects\DataOne\HandreaderEmu.cs\obj\Debug\HandreaderEmu.cs.pdb

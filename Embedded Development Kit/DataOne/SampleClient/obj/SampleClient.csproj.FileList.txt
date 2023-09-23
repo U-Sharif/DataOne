@@ -1,0 +1,11 @@
+bin\x86\Debug\SampleClient.exe
+bin\x86\Debug\SampleClient.pdb
+bin\x86\Debug\DataOneLib.dll
+bin\x86\Debug\LLRP.Impinj.dll
+bin\x86\Debug\Impinj.OctaneSdk.dll
+bin\x86\Debug\LLRP.dll
+bin\x86\Debug\Impinj.OctaneSdk.xml
+bin\x86\Debug\DataOneLib.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\SampleClient.exe
+obj\x86\Debug\SampleClient.pdb

@@ -1,0 +1,5 @@
+F:\RFID\DataOne\DataOne\HandreaderEmu.cs\obj\Debug\ResolveAssemblyReference.cache
+F:\RFID\DataOne\DataOne\HandreaderEmu.cs\bin\Debug\HandreaderEmu.cs.exe
+F:\RFID\DataOne\DataOne\HandreaderEmu.cs\bin\Debug\HandreaderEmu.cs.pdb
+F:\RFID\DataOne\DataOne\HandreaderEmu.cs\obj\Debug\HandreaderEmu.cs.exe
+F:\RFID\DataOne\DataOne\HandreaderEmu.cs\obj\Debug\HandreaderEmu.cs.pdb

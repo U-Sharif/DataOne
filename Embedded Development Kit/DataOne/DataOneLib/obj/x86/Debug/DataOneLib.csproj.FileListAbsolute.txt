@@ -1,0 +1,9 @@
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOneLib\bin\x86\Debug\DataOneLib.dll
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOneLib\bin\x86\Debug\DataOneLib.pdb
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOneLib\bin\x86\Debug\Impinj.OctaneSdk.dll
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOneLib\bin\x86\Debug\LLRP.dll
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOneLib\bin\x86\Debug\LLRP.Impinj.dll
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOneLib\bin\x86\Debug\Impinj.OctaneSdk.xml
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOneLib\obj\x86\Debug\ResolveAssemblyReference.cache
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOneLib\obj\x86\Debug\DataOneLib.dll
+\\172.16.34.12\smoky$\__transfer\DataOne\DataOneLib\obj\x86\Debug\DataOneLib.pdb

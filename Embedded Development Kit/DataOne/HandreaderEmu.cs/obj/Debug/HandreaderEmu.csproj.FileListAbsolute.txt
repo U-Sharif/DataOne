@@ -1,0 +1,5 @@
+\\172.16.34.12\smoky$\__transfer\DataOne\HandreaderEmu.cs\bin\Debug\HandreaderEmu.cs.exe
+\\172.16.34.12\smoky$\__transfer\DataOne\HandreaderEmu.cs\bin\Debug\HandreaderEmu.cs.pdb
+\\172.16.34.12\smoky$\__transfer\DataOne\HandreaderEmu.cs\obj\Debug\ResolveAssemblyReference.cache
+\\172.16.34.12\smoky$\__transfer\DataOne\HandreaderEmu.cs\obj\Debug\HandreaderEmu.cs.exe
+\\172.16.34.12\smoky$\__transfer\DataOne\HandreaderEmu.cs\obj\Debug\HandreaderEmu.cs.pdb
